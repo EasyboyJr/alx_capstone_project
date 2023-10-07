@@ -34,4 +34,4 @@ As a portfolio website, this project will remain a work in progress, evolving in
 ## Contact Information:
 
 + 	•	GitHub: https://github.com/EasyboyJr
-- 	•	Twitter: https://twitter.com/Semilore_g
+- 	•	Twitter: https://twitter.com/Semilore_g 
