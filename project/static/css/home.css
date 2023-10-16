@@ -1,0 +1,78 @@
+#hero-section {
+    border: 2px solid blue;
+    height: auto;
+    background-color: var(--background-color);
+    margin-top: -51px;
+}
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-container {
+    margin-top: 250px;
+}
+
+#hero-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#hero-section h1 span {
+    color: var(--primary-color)
+}
+
+#hero-text {
+    position: relative;
+    top: -40px;
+    color: #9f9696;
+}
+
+.pri-btn {
+    display: inline-block;
+    padding: 14px 34px;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: 2px solid var(--primary-color);
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.6s ease-in-out;
+}
+
+.pri-btn:hover {
+    background: transparent;
+    transform: translateY(-5px);
+    color: var(--primary-color);
+}
+
+.handle {
+    margin-top: 120px;
+}
+
+.handle ion-icon {
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    background: linear-gradient(130.08deg, #383528 0%, #191919 100%);
+    box-shadow: 0px 20px 40px #00000070;
+    border: 1px solid #3b3b3b;
+    border-radius: 50px;
+    color: var(--text-color);
+    font-size: 20px;
+    margin: 0 7px;
+    transition: all 0.6s ease-in-out;
+}
+
+.handle ion-icon:hover {
+    transform: translateY(-10px);
+}
+
+

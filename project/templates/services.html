@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %}Services{% endblock %}
+{% block css %}<link rel="stylesheet" href="{{ url_for('static', filename='css/services.css') }}">{% endblock %}
+{% block content %}
+<!-- services section -->
+<section class="services-section">
+    <div class="services-section-container">
+        <h2>My <span>Services</span></h2>
+        <!-- services container -->
+        <div class="services-container">
+            <div class="services-box">
+                <ion-icon name="code-slash-outline"></ion-icon>
+                <h3>Web Development</h3>
+                <p>I create captivating, responsive websites that deliver seamless user experiences. From stunning front-end interfaces to robust back-end systems, I bring your digital vision to life.</p>
+                <div class="button">
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="services-box">
+                <ion-icon name="desktop-outline"></ion-icon>
+                <h3>Software Engineering</h3>
+                <p>I offer tailored software engineering solutions, from efficient algorithms to secure application design. Count on me to build projects with precision and reliability.</p>
+                <div class="button">
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+            <div class="services-box">
+                <ion-icon name="file-tray-stacked-outline"></ion-icon>
+                <h3>Database Management</h3>
+                <p>Effective data organization is crucial for success. I create and maintain well-structured databases for efficient, secure data management, forming a strong foundation for your project.</p>
+                <div class="button">
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- portfolio section -->
+<section class="portfolio">
+    <div class="portfolio-section-container">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <!-- portfolio container -->
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="{{ url_for('static', filename='assets/images/project1.jpg') }}">
+                <div class="portfolio-layer">
+                    <h3>Web Development</h3>
+                    <p>A hands-on project to sharpen my HTML and CSS skills.</p>
+                    <a href="#"><ion-icon name="git-pull-request-outline"></ion-icon></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="{{ url_for('static', filename='assets/images/project2.jpg') }}">
+                <div class="portfolio-layer">
+                    <h3>Web Development</h3>
+                    <p>Crafting my professional online presence.</p>
+                    <a href="#"><ion-icon name="git-pull-request-outline"></ion-icon></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="{{ url_for('static', filename='assets/images/project3.jpg') }}">
+                <div class="portfolio-layer">
+                    <h3>Web Development</h3>
+                    <p>My first adventure in web development.</p>
+                    <a href="#"><ion-icon name="git-pull-request-outline"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="button">
+            <a href="{{ url_for('contact') }}">Hire Me</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

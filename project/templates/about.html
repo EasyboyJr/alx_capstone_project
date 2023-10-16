@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock %}
+{% block css %}<link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">{% endblock %}
+
+{% block content %}
+<!-- about section-->
+<section class="about-section">
+    <div class="about-container">
+        <h1>About <span>Me</span></h1>
+
+        <div class="about-me">
+            <div class="profile-image">
+                <!-- profile image-->
+                <img src="{{ url_for('static', filename='assets/images/about.jpg') }}">
+            </div>
+            <div class="bio">
+                <h2>Bio</h2>
+                <p>
+                    Hello, I'm <span>Onifade George Oluwasemilore</span>, a passionate web developer and software engineer based in Lagos. My journey in web development began last year, and I've been on an exciting self-taught adventure ever since.
+                </p>
+                <p>
+                    I'm deeply committed to crafting engaging and user-friendly websites that leave a lasting impression. As a self-motivated developer, I'm constantly pushing the boundaries of my knowledge and skills. My development toolbox includes HTML, CSS, and JavaScript, which I use to build dynamic and interactive user interfaces. I'm also well-versed in Python and utilize it for backend development, working with technologies like Flask to create robust web applications.
+                </p>
+                <p>
+                    One of my passions is <span>python programming</span>, and I have hands-on experience with <span>python</span>. I'm proficient in <span>Git</span> version control, allowing me to collaborate seamlessly with other developers and manage project code efficiently.
+                </p>
+                <p>
+                    When I'm not coding, you can find me exploring new technologies or diving into the latest web development trends. I'm enthusiastic about learning and staying updated with the rapidly evolving tech landscape.
+                </p>
+                <p>
+                    Thank you for visiting my portfolio. Feel free to explore my projects and get in touch if you have any inquiries or exciting opportunities to collaborate.
+                </p>
+            </div>
+        </div>
+        <div class="button">
+            <a href="{{ url_for('services') }}">View My Projects</a>
+        </div>
+    </div>
+</section>
+<!-- skill section -->
+<section class="skill-section">
+    <div>
+        <h2>My Skills</h2>
+    </div>
+    <div class="skill-container">
+        <!-- HTML-->
+        <div class="skill-box">
+            <div class="skill-title">
+                <div class="skill-img">
+                    <img src="{{ url_for('static', filename='assets/images/html.webp') }}">
+                </div>
+                <h3>HTML 5</h3>
+            </div>
+            <p>I have a strong foundation in HTML, the backbone of the web. With expertise in HTML5, I'm adept at creating structured and semantic web content that adheres to the latest standards. My HTML skills include crafting clean and accessible code, optimizing websites for search engines, and ensuring cross-browser compatibility.</p>
+        </div>
+        <!-- CSS-->
+        <div class="skill-box">
+            <div class="skill-title">
+                <div class="skill-img">
+                    <img src="{{ url_for('static', filename='assets/images/css.png') }}">
+                </div>
+                <h3>CSS 3</h3>
+            </div>
+            <p>My CSS3 skills bring life and style to web pages. I have hands-on experience in creating responsive and visually appealing designs. My proficiency in CSS3 includes crafting layouts, animations, and transitions to enhance the user experience. With a keen eye for detail, I ensure that websites look pixel-perfect on different devices and screen sizes.</p>
+        </div>
+        <!-- JavaScript-->
+        <div class="skill-box">
+            <div class="skill-title">
+                <div class="skill-img">
+                    <img src="{{ url_for('static', filename='assets/images/js.webp') }}">
+                </div>
+                <h3>JavaScript</h3>
+            </div>
+            <p>JavaScript is my playground for making web applications interactive and dynamic. I possess a strong command of this versatile programming language, using it to create responsive user interfaces and harness the power of the web. My expertise includes working with JavaScript libraries and frameworks to build robust front-end functionality. Whether it's handling asynchronous operations, optimizing web performance, or creating engaging user experiences, JavaScript is at the core of my skill set.</p>
+        </div>
+        <!-- PYTHON -->
+        <div class="skill-box">
+            <div class="skill-title">
+                <div class="skill-img">
+                    <img src="{{ url_for('static', filename='assets/images/python.jpeg') }}">
+                </div>
+                <h3>PYTHON</h3>
+            </div>
+            <p>Python, coupled with the Flask web framework, is where I find my passion for server-side development. I've honed my Python skills to create powerful and efficient back-end systems that drive web applications. With Flask, I've built RESTful APIs and dynamic web solutions, all while ensuring clean and maintainable code. My understanding of object-oriented programming in Python has allowed me to architect well-structured applications, and my use of databases, including MySQL, has contributed to efficient data management. In the world of web development, Python and Flask are my trusted allies.</p>
+        </div>
+        <!-- MySql-->
+        <div class="skill-box">
+            <div class="skill-title">
+                <div class="skill-img">
+                    <img src="{{ url_for('static', filename='assets/images/mysql.jpeg') }}">
+                </div>
+                <h3>MYSQL</h3>
+            </div>
+            <p>When it comes to data management, MySQL is my go-to choice. I've harnessed the power of relational databases to efficiently store, retrieve, and manage data for various projects. My expertise in MySQL includes creating well-optimized database schemas, writing complex queries, and ensuring data integrity. Whether it's designing databases for web applications, crafting SQL queries, or maintaining large datasets, I've got a solid grasp of MySQL to support the back-end of web applications.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}

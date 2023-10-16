@@ -1,0 +1,239 @@
+.about-section {
+    border: 2px solid blue;
+    background-color: var(--background-color);
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about-container {
+    border: 2px solid blue;
+    width: 1000px;
+    margin-top: 150px;
+}
+
+.about-container h1 span {
+    color: var(--primary-color);
+}
+
+.about-container h1 {
+    font-size: 70px;
+}
+
+.profile-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 1000px;
+    border: 2px solid var(--primary-color);
+}
+
+.profile-image {
+    align-self: center;
+}
+
+.about-me {
+    display: flex;
+    gap: 30px;
+}
+
+.bio p {
+    text-align: left;
+}
+
+.bio p span {
+    color: var(--primary-color);
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+}
+
+.bio h2 {
+    text-decoration: underline;
+    color: var(--primary-color);
+    align-self: flex-start;
+}
+
+.button a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 14px 34px;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: 2px solid var(--primary-color);
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.6s ease-in-out;
+}
+
+.button a:hover {
+    background: transparent;
+    transform: translateY(-5px);
+    color: var(--primary-color);
+}
+
+.button {
+    margin: 40px;
+}
+
+/* responsiveness for about me
+===================================*/
+@media (max-width: 784px) {
+    .about-me {
+        flex-direction: column;
+    }
+
+    .bio h2 {
+        align-self: center;
+    }
+
+    .about-container {
+        width: auto;
+    }
+
+    .about-container h1 {
+        font-size: 50px;
+    }
+}
+
+
+/* skill section
+=======================*/
+
+.skill-section {
+    display:flex;
+    flex-direction: column;
+}
+
+.skill-section div {
+    align-self: center;
+}
+
+.skill-section div h2 {
+    font-size: 50px;
+}
+
+.skill-container {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1rem;
+    padding: 1rem 80px;
+    color: var(--background-color);
+}
+
+.skill-box {
+    border: 1px solid black;
+    cursor: pointer;
+    height: 400px;
+}
+
+.skill-title {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+
+.skill-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: var(--primary-color);
+    transition: .5s;
+}
+
+.skill-title:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: var(--primary-color);
+    transition: .5s;
+}
+
+.skill-box:hover > .skill-title:after, .skill-box:hover > .skill-title:before {
+    width: 35px;
+}
+
+.skill-img img {
+    width: 60px;
+    z-index: 2;
+}
+
+.skill-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-img:after {
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 90px;
+}
+
+.skill-title h3 {
+    color: var(--background-color);
+    margin-top: 0.5rem;
+}
+
+/* responsiveness for skills section
+=====================================*/
+@media (max-width: 1300px) {
+    .skill-box {
+        height: 500px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .skill-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 735px) {
+    .skill-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 420px) {
+    .skill-box {
+        margin: 20px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* @media (max-width: 375px) {
+    .skill-box {
+        height:auto;
+
+    }
+} */

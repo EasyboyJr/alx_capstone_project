@@ -1,0 +1,241 @@
+/* services section
+=======================*/
+
+.services-section {
+    background-color: var(--background-color);
+    padding-top: 20px;
+}
+
+.services-section h2 {
+    margin-bottom: 5rem;
+}
+
+.services-section-container {
+    border: 2px solid blue;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.services-section-container h2 {
+    font-size: 70px;
+}
+
+.services-section-container h2 span {
+    color: var(--primary-color);
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.services-box {
+    background: #333;
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--background-color);
+    width: 350px;
+    height: 400px;
+    transition: .5s ease;
+}
+
+.services-box:hover {
+    border-color: var(--primary-color);
+    transform: scale(1.02);
+}
+
+.services-box ion-icon {
+    font-size: 4rem;
+    color: var(--primary-color);
+}
+
+.services-box h3 {
+    font-size: 1.5rem;
+}
+
+.services-box p {
+    margin: 1rem 0 3rem;
+}
+
+.button a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 14px 34px;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: 2px solid var(--primary-color);
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.6s ease-in-out;
+}
+
+.button a:hover {
+    background: transparent;
+    transform: translateY(-5px);
+    color: var(--primary-color);
+}
+
+/* responsiveness for services section
+===================================*/
+@media (max-width: 1300px) {
+
+    .services-box {
+        width: 300px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 775px) {
+    .services-box {
+        width: 350px;
+        height: 400px;
+    }
+
+    .services-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .services-section-container h2 {
+        font-size: 50px;
+    }
+}
+
+
+/* portfolio section
+============================*/
+.portfolio {
+    background: var(--second-bg-color);
+}
+
+.portfolio h2 {
+    margin-bottom: 4rem;
+    color: var(--text-color);
+    font-size: 50px;
+}
+
+.portfolio h2 span {
+    color: var(--primary-color);
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.portfolio-box {
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--background-color);
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    height: 300px;
+}
+
+.portfolio-box img {
+    width: 100%;
+    transition: .5s ease;
+}
+
+.portfolio-box:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--primary-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.portfolio-box:hover .portfolio-layer {
+    transform: translateY(0);
+}
+
+.portfolio-layer h3 {
+    font-size: 2rem;
+    color: var(--text-color);
+}
+
+.portfolio-layer p {
+    font-size: 1.4rem;
+    margin: .3rem 0 1rem;
+    color: var(--text-color);
+}
+
+.portfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.portfolio-layer a ion-icon {
+    font-size: 2rem;
+
+}
+
+.portfolio-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.button a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 14px 34px;
+    background: var(--primary-color);
+    color: var(--text-color);
+    border: 2px solid var(--primary-color);
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.6s ease-in-out;
+}
+
+.button a:hover {
+    background: transparent;
+    transform: translateY(-5px);
+    color: var(--primary-color);
+}
+
+/* responsiveness for project section
+======================*/
+@media (max-width: 1300px) {
+    .portfolio-layer h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 775px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+}

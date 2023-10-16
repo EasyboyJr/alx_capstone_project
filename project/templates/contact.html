@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock %}
+{% block css %}<link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">{% endblock %}
+{% block content %}
+<!-- contact section -->
+<section class="contact-section">
+    <div class="contact-section-container">
+        <h2>Contact <span>Me</span></h2>
+        <div class="reach-me">
+            <div class="reach-me-box">
+                <ion-icon name="location-outline"></ion-icon>
+                <h4>Where To Find Me</h4>
+                <p>km 8, AP filling station, Akodo, lekki free zone area, Ibeju-Lekki, Lagos. </p>
+            </div>
+            <div class="reach-me-box">
+                <ion-icon name="mail-outline"></ion-icon>
+                <h4>Email Me At</h4>
+                <p>georgeoluwasemilore1@gmail.com</p>
+            </div>
+            <div class="reach-me-box">
+                <ion-icon name="call-outline"></ion-icon>
+                <h4>Call Me At</h4>
+                <p>Mobile: <span>+234 704 942 1176</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="contact-form-container">
+        <h2>I'd Love To Hear From You.</h2>
+        <p>Thank you for visiting! Your thoughts, questions, and ideas matter to me. Whether you have a question, a project in mind, or just want to chat, I'm all ears. Please share your thoughts with me through the contact form below. I'm looking forward to connecting with you!</p>
+        <div class="form-container">
+            <form method="POST" action="/contact">
+                <div class="input-group">
+                    <input type="text" name="Name" placeholder="Enter your name" id="validate-name" required>
+                    <span id="name-error"></span>
+                </div>
+                <div class="input-group">
+                    <input type="email" name="Email" placeholder="Enter your email" id="validate-email" required>
+                    <span id="email-error"></span>
+                </div>
+                <div class="input-group">
+                    <textarea name="Message" rows="5" placeholder="Enter your message" id="validate-message" required></textarea>
+                    <span id="message-error"></span>
+                </div>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

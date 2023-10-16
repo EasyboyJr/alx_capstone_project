@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}base{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    {% block css %}{% endblock %}
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <nav class="navbar">
+            <div class="logo"><span>G</span>EORGE</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li class="nav-items"><a href="{{ url_for('home') }}">Home</a></li>
+                    <li class="nav-items"><a href="{{ url_for('about') }}">About me</a></li>
+                    <li class="nav-items"><a href="{{ url_for('services') }}">Services</a></li>
+                    <li class="nav-items"><a href="{{ url_for('contact') }}">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- content of the page goes here-->
+        {% block content %}
+        {% endblock %}
+        <!-- end of content-->
+    </main>
+
+    <!-- footer section-->
+    <footer>
+        <div class="handle-container">
+            <div class="logo"><span>G</span>EORGE</div>
+            <div class="footer-handle">
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+        </div>
+        <div id="copyright">
+            <p>Copyright © 2023 George</p>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="{{ url_for('static', filename='js/base.js') }}"></script>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    {% block script %}{% endblock %}
+</body>
+</html>
