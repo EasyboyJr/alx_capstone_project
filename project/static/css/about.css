@@ -134,7 +134,7 @@
     text-align: center;
     grid-gap: 1rem;
     padding: 1rem 80px;
-    color: var(--background-color);
+    color: var(--text-color);
 }
 
 .skill-box {
@@ -205,7 +205,7 @@
 }
 
 .skill-title h3 {
-    color: var(--background-color);
+    color: var(--text-color);
     margin-top: 0.5rem;
 }
 

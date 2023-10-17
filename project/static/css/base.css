@@ -2,11 +2,11 @@
     box-sizing: border-box;
 }
 :root {
-    --primary-color: rgb(252, 69, 8);
+    --primary-color: #f92929;
     --second-color: rgb(0, 0, 0);
-    --background-color: #1f1f21;
+    --background-color: #0a0a0a;
     --text-color: white;
-    --second-bg-color: #615f5f;
+    --second-bg-color: #171717;
 }
 
 body {
@@ -54,13 +54,13 @@ header {
 
 .nav-items a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--text-color);
     padding: 1rem;
     display: block;
 }
 
 .nav-items a:hover {
-    color: var(--text-color);
+    color: var(--primary-color);
 }
 
 /* harmburger 

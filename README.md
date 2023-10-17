@@ -20,7 +20,9 @@ This project harnesses the power of several core technologies and frameworks to 
 
 ## Screenshots/ Demo:
 
-Will add it later
+![demo1](/images/Screenshot%20(72).png)
+![demo2](/images/Screenshot%20(73).png)
+![demo3](/images/Screenshot%20(74).png)
 
 ## Roadmap and Future Enhancements:
 
