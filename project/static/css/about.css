@@ -1,5 +1,5 @@
 .about-section {
-    border: 2px solid blue;
+    border: 2px;
     background-color: var(--background-color);
     height: auto;
     display: flex;
@@ -11,7 +11,7 @@
 }
 
 .about-container {
-    border: 2px solid blue;
+    border: 2px;
     width: 1000px;
     margin-top: 150px;
 }
@@ -110,6 +110,7 @@
 .skill-section {
     display:flex;
     flex-direction: column;
+    background-color: var(--second-bg-color);
 }
 
 .skill-section div {
@@ -118,6 +119,11 @@
 
 .skill-section div h2 {
     font-size: 50px;
+    color: var(--text-color);
+}
+
+.skill-section div h2 span {
+    color: var(--primary-color);
 }
 
 .skill-container {
@@ -132,7 +138,7 @@
 }
 
 .skill-box {
-    border: 1px solid black;
+    border: 1px;
     cursor: pointer;
     height: 400px;
 }

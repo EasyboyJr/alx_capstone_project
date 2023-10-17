@@ -11,7 +11,7 @@
 }
 
 .contact-section-container {
-    border: 2px solid blue;
+    border: 2px;
     margin-top: 150px;
     display: flex;
     flex-direction: column;
@@ -53,12 +53,6 @@
 }
 
 /* responsiveness for contact section */
-
-@media (max-width: 1300px) {
-    .reach-me-box {
-        
-    }
-}
 
 @media (max-width: 775px) {
     .reach-me {
@@ -145,6 +139,15 @@ button:hover {
     text-align: center;
 }
 
+.contact-form-container h2 {
+    color: var(--primary-color);
+    font-size: 40px;
+}
+
+.contact-form-container p {
+    color: var(--text-color);
+}
+
 .form-container {
     width: 400px;
 }
@@ -154,4 +157,13 @@ button:hover {
     width: 30%;
     white-space: nowrap;
     color: red;
+}
+
+/* responsiveness for contact form
+===============================*/
+
+@media (max-width: 500px) {
+    .contact-form-container h2 {
+        font-size: 30px;
+    }
 }

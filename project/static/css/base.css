@@ -3,7 +3,7 @@
 }
 :root {
     --primary-color: rgb(252, 69, 8);
-    --second-color: rgb(1, 1, 17);
+    --second-color: rgb(0, 0, 0);
     --background-color: #1f1f21;
     --text-color: white;
     --second-bg-color: #615f5f;
@@ -35,6 +35,7 @@ header {
     margin: .5rem;
     font-weight: bold;
     color: var(--text-color);
+    text-decoration: none;
 }
 
 .logo span {
@@ -59,7 +60,7 @@ header {
 }
 
 .nav-items a:hover {
-    color: var(--second-color);
+    color: var(--text-color);
 }
 
 /* harmburger 
@@ -138,7 +139,7 @@ header {
 =======================*/
 
 footer {
-    border: 2px solid red;
+    border: 2px;
     background-color: var(--second-color);
     color: white;
     display: flex;
@@ -184,4 +185,9 @@ footer {
 .footer-handle {
     display: flex;
     align-items: flex-end;
+}
+
+
+.special {
+    text-decoration: none;
 }
